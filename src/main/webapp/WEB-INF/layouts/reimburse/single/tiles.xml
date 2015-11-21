@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <!-- reimburse single 视图  -->
+    <definition name=".reimburse/single" template="/WEB-INF/layouts/reimburse/single/layout.jsp">
+        <put-attribute name="title" value="Reach Single" type="string"/>
+        <put-attribute name="center" value="/WEB-INF/layouts/reimburse/single/center.jsp"/>
+        <put-list-attribute name="css" inherit="true">
+            <add-attribute value="/resources/reimburse/single/layout.css" type="string"/>
+        </put-list-attribute>
+        <put-list-attribute name="js" inherit="true">
+            <add-attribute value="/resources/reimburse/single/layout.js" type="string"/>
+        </put-list-attribute>
+    </definition>
+
+</tiles-definitions>

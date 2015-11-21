@@ -1,0 +1,39 @@
+.ui-widget-header {
+	padding: 4px;
+	margin-top: 1px;
+}
+
+#northContainer {
+	border: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#centerContainer {
+	border: 1px solid #BBB;
+	padding: 2px;
+	overflow: hidden;
+}
+
+#southContainer {
+	border: 0;
+}
+
+.ui-jqgrid, .ui-jqdialog {
+	font-size: 12px;
+}
+
+.ui-button-text-icon-primary .ui-button-text,.ui-button-text-icons .ui-button-text
+	{
+	padding: .2em 2em .2em 2.4em;
+}
+
+.ui-button-icon-only .ui-button-text,.ui-button-icons-only .ui-button-text
+	{
+	padding: .1em;
+	text-indent: -9999999px;
+}
+
+button.ui-button-icon-only {
+	width: 2.0em;
+}

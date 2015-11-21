@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <!-- reimburse single 布局  -->
+    <definition name=".reimburse/single" template="/WEB-INF/layouts/reimburse/single/layout.jsp">
+        <put-attribute name="title" value="Reimburse frame" type="string"/>
+        <put-attribute name="north" value="/WEB-INF/layouts/reimburse/commons/north.jsp"/>
+        <put-attribute name="center" value="/WEB-INF/layouts/reimburse/commons/center.jsp"/>
+        <put-attribute name="south" value="/WEB-INF/layouts/reimburse/commons/south.jsp"/>
+        <put-list-attribute name="css" inherit="true">
+            <add-attribute value="/resources/reimburse/frame/layout.css" type="string"/>
+        </put-list-attribute>
+        <put-list-attribute name="js" inherit="true">
+            <add-attribute value="/resources/reimburse/frame/layout.js" type="string"/>
+        </put-list-attribute>
+    </definition>
+
+
+    <!-- reimburse frame 布局  -->
+    <definition name=".reimburse/frame" template="/WEB-INF/layouts/reimburse/frame/layout.jsp">
+        <put-attribute name="title" value="Reimburse frame" type="string"/>
+        <put-attribute name="north" value="/WEB-INF/layouts/reimburse/commons/north.jsp"/>
+        <put-attribute name="center" value="/WEB-INF/layouts/reimburse/commons/center.jsp"/>
+        <put-attribute name="south" value="/WEB-INF/layouts/reimburse/commons/south.jsp"/>
+        <put-list-attribute name="css" inherit="true">
+            <add-attribute value="/resources/reimburse/frame/layout.css" type="string"/>
+        </put-list-attribute>
+        <put-list-attribute name="js" inherit="true">
+            <add-attribute value="/resources/reimburse/frame/layout.js" type="string"/>
+        </put-list-attribute>
+    </definition>
+
+</tiles-definitions>

@@ -1,0 +1,20 @@
+#loginWidget {
+	width: 400px;
+	margin: 60px;
+	float: left;
+}
+
+#loginWidget .ui-widget-content {
+	border-top: 0;
+	padding: 4px;
+}
+
+#linkWidget{
+	margin: 60px;
+	width: 200px;
+	float: left;
+}
+
+#linkWidget .ui-widget-header{
+	border-bottom: 0;
+}

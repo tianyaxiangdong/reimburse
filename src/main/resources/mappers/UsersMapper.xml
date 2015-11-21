@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wwl.storage.mappers.UsersMapper">
+
+    <insert id="addUser" parameterType="com.wwl.entity.User" useGeneratedKeys="true" keyProperty="u_id">
+        INSERT INTO users
+        (
+        u_username,
+        u_relname,
+        u_password,
+        u_role_id,
+        u_status,
+        u_createtime
+        )
+        VALUES
+        (
+        #{uUsername},
+        #{uRelname},
+        #{uPassword},
+        #{uRoleId},
+        #{uStatus},
+        #{uCreatetime}
+        )
+    </insert>
+
+
+</mapper>

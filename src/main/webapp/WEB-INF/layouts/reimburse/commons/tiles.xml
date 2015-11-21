@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <definition name=".reimburse/commons-css" template="/WEB-INF/layouts/reimburse/commons/css.jsp"/>
+
+    <definition name=".reimburse/commons-javascript" template="/WEB-INF/layouts/reimburse/commons/javascript.jsp"/>
+
+</tiles-definitions>
