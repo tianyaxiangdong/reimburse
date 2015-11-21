@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+
+    <!-- 本模块单一界面父视图 -->
+    <definition name=".reimburse.single" extends=".reimburse/single">
+        <put-list-attribute name="css" inherit="true"/>
+        <put-list-attribute name="js" inherit="true" />
+    </definition>
+
+    <!-- 登录主界面视图 -->
+    <definition name="/security/login" extends=".reimburse.single">
+        <put-attribute name="title" value="登录" type="string" />
+        <put-attribute name="center" value="/WEB-INF/views/reimburse/security/login.jsp"/>
+        <put-list-attribute name="css" inherit="true">
+            <add-attribute value="/css/reimburse/security/login.css" type="string"/>
+        </put-list-attribute>
+        <put-list-attribute name="js" inherit="true">
+            <add-attribute value="/js/reimburse/security/login.js" type="string"/>
+        </put-list-attribute>
+    </definition>
+
+    <!-- 修改密码界面视图 -->
+    <definition name="/security/change-pwd" extends=".reimburse.single">
+        <put-attribute name="title" value="修改密码" type="string" />
+        <put-attribute name="center" value="/WEB-INF/views/reimburse/security/change-pwd.jsp"/>
+        <put-list-attribute name="css" inherit="true">
+            <add-attribute value="/css/reimburse/security/change-pwd.css" type="string"/>
+        </put-list-attribute>
+        <put-list-attribute name="js" inherit="true">
+            <add-attribute value="/js/reimburse/security/change-pwd.js" type="string"/>
+        </put-list-attribute>
+    </definition>
+
+
+
+
+</tiles-definitions>
