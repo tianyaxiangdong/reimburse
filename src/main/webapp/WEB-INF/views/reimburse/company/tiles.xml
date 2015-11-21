@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+
+    <!-- 本模块单一界面父视图 -->
+    <definition name=".reimburse.single" extends=".reimburse/single">
+        <put-list-attribute name="css" inherit="true"/>
+        <put-list-attribute name="js" inherit="true" />
+    </definition>
+    <!-- 公司信息列表查询页 -->
+    <definition name="/company/company-list" extends=".reimburse.single">
+        <put-attribute name="title" value="查询列表" type="string" />
+        <put-attribute name="center" value="/WEB-INF/views/reimburse/company/company-list.jsp"/>
+        <put-list-attribute name="css" inherit="true">
+            <add-attribute value="/company/company-list.css" type="string"/>
+        </put-list-attribute>
+        <put-list-attribute name="js" inherit="true">
+            <add-attribute value="/company/company-list.js" type="string"/>
+        </put-list-attribute>
+    </definition>
+    <!-- 公司信息增加首页面 -->
+    <definition name="/company/company-new" extends=".reimburse.single">
+        <put-attribute name="title" value="添加公司" type="string" />
+        <put-attribute name="center" value="/WEB-INF/views/reimburse/company/company-new.jsp"/>
+        <put-list-attribute name="css" inherit="true">
+            <add-attribute value="/company/company-new.css" type="string"/>
+        </put-list-attribute>
+        <put-list-attribute name="js" inherit="true">
+            <add-attribute value="/company/company-new.js" type="string"/>
+        </put-list-attribute>
+    </definition>
+    <!-- 公司信息修改页面 -->
+    <definition name="/company/company-edit" extends=".reimburse.single">
+        <put-attribute name="title" value="添加公司" type="string" />
+        <put-attribute name="center" value="/WEB-INF/views/reimburse/company/company-edit.jsp"/>
+        <put-list-attribute name="css" inherit="true">
+            <add-attribute value="/company/company-edit.css" type="string"/>
+        </put-list-attribute>
+        <put-list-attribute name="js" inherit="true">
+            <add-attribute value="/company/company-edit.js" type="string"/>
+        </put-list-attribute>
+    </definition>
+</tiles-definitions>
